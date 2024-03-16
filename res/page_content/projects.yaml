@@ -1,0 +1,24 @@
+- name: locker
+  about: |
+    there has been a constant issue with every game project i've worked on: git is phenomenal for programmers but sucks
+    for artists.
+    
+    locker is a project designed to replicate a lot of what actually does work for artists from other version control
+    solutions. locker use the locking feature of git lfs to create workspaces that artists can pull binary files
+    into.
+  tech:
+    - rust
+    - git
+    - git lfs
+    - a working knowledge of perforce
+    - spite
+
+- name: this website
+  about: |
+    i wanted a website, so here it is
+  tech:
+    - html
+    - css
+    - minimal js because i hate it
+    - yaml
+    - templating

@@ -1,7 +1,7 @@
 pages:
   - name: about
     path: index
-    content: about.md
+    content: about.yaml
   - name: posts
     path: posts
-    content: posts.md
+    content: posts.yaml
