@@ -1,0 +1,7 @@
+pages:
+  - name: about
+    path: index
+    content: about.md
+  - name: posts
+    path: posts
+    content: posts.md
