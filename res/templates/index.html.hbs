@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>adam schlesinger</title>
+  <link rel='stylesheet' href='style.css'>
+  <script>
+    function loadContent(page) {
+      fetch(page + '.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('content').innerHTML = data;
+          })
+          .catch(error => {
+            console.log(error);
+          });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const page = urlParams.get('page') ?? '{{pages.[0].name}}';
+      loadContent(page);
+    });
+  </script>
+</head>
+<body>
+<div class='container'>
+  <header>
+    <h1>adam schlesinger</h1>
+  </header>
+  <main>
+    <div class='content-wrapper'>
+      <div id='content'>
+      </div>
+      <nav>
+        <ul>
+          {{#each pages}}
+            <li><a href='?page={{name}}'>{{name}}</a></li>
+          {{/each}}
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; {{currentYear}} adam schlesinger. all rights reserved.</p>
+  </footer>
+</div>
+</body>
+</html>

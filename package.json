@@ -1,0 +1,12 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "node src/build.js"
+  },
+  "author": "adam schlesinger",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "yaml": "^2.4.1"
+  }
+}
