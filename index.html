@@ -5,6 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>adam schlesinger</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function loadContent(page) {
+      fetch(page + ".html")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('content').innerHTML = data;
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const page = urlParams.get('page');
+      loadContent(page);
+    });
+  </script>
 </head>
 <body>
 <div class="container">
@@ -13,30 +31,23 @@
   </header>
   <main>
     <div class="content-wrapper">
-      <div class="content">
-        <p>I am a game systems director with 15 years of professional experience in software engineering across the
-          stack for mobile platforms. I have managed many projects from start to finish within start-up environments as
-          well as large organizations on user scales ranging from a few thousand MAU to millions of DAU.</p>
-
-        <p>Over my time in the industry I have launched over 20 games and actively participated in the development and
-          maintenance of 30+. Nearly half of these titles have also been run in live operation.</p>
-
-        <p>Beyond professional knowledge I regularly keep sharp reading up on the latest tech with a bevy of side
-          projects as well. I keep balanced with healthy background and interest in art and design.</p>
+      <div id="content">
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">about</a></li>
-          <li><a href="posts.html">posts</a></li>
-          <li><a href="projects.html">projects</a></li>
+          <li><a href="?page=about">about</a></li>
+          <li><a href="?page=posts">posts</a></li>
+          <li><a href="?page=projects">projects</a></li>
+          <li><a href="?page=resume">resume</a></li>
           <li><a href="https://github.com/adamschlesinger">github</a></li>
           <li><a href="https://www.linkedin.com/in/adam-schlesinger-a779497/">linkedin</a></li>
+          <li><a href="?page=contact">contact</a></li>
         </ul>
       </nav>
     </div>
   </main>
   <footer>
-    <p>&copy; 2023 Adam Schlesinger. All rights reserved.</p>
+    <p>&copy; 2023 adam schlesinger. all rights reserved.</p>
   </footer>
 </div>
 </body>

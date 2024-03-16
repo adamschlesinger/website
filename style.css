@@ -39,7 +39,7 @@ main {
   justify-content: space-between;
 }
 
-.content {
+#content {
   padding: 20px;
   /*width: 60%;*/
 }
