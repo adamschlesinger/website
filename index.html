@@ -19,7 +19,7 @@
 
     document.addEventListener("DOMContentLoaded", function () {
       const urlParams = new URLSearchParams(window.location.search);
-      const page = urlParams.get('page');
+      const page = urlParams.get('page') ?? 'about';
       loadContent(page);
     });
   </script>
