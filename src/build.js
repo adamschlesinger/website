@@ -8,31 +8,51 @@ const outputPath = 'public';
 
 const pages = [];
 const indexData = {
-  'pages': pages,
-  'currentYear': new Date().getFullYear()
+  pages: pages,
+  currentYear: new Date().getFullYear()
 };
 
-const renderPage = (pageName) => {
-  const pageMarkdownPath = `${pagesPath}/${pageName}.md`;
-  const pageHtmlOutPath = `${outputPath}/${pageName}.html`
+/**
+ *
+ * @param context
+ * @param templatePath
+ * @param renderingOutputPath
+ */
+const renderTemplate = (context, templatePath, renderingOutputPath) => {
+  const templateString = fs.readFileSync(templatePath, 'utf8')
+  const template = handlebars.compile(templateString);
 
-  const pageString = fs.readFileSync(pageMarkdownPath, 'utf8');
+  const renderedPage = template(context);
+  fs.writeFileSync(renderingOutputPath, renderedPage);
+};
+
+/**
+ *
+ * @param pageName
+ */
+const renderPage = (pageName) => {
+  const markdownPath = `${pagesPath}/${pageName}.md`;
+  const htmlOutPath = `${outputPath}/${pageName}.html`
+  const templatePath = `${templatesPath}/page.html.hbs`;
+
+  const pageString = fs.readFileSync(markdownPath, 'utf8');
   const converter = new showdown.Converter();
   const pageHtml = converter.makeHtml(pageString);
 
-  fs.writeFileSync(pageHtmlOutPath, pageHtml);
+  const pageContext = { name: pageName, html: pageHtml }
+  renderTemplate(pageContext, templatePath, htmlOutPath);
+
   pages.push(pageName);
 };
 
+/**
+ *
+ */
 const renderIndex = () => {
   const templatePath = `${templatesPath}/index.html.hbs`;
   const indexHtmlOutPath = `${outputPath}/index.html`
 
-  const templateString = fs.readFileSync(templatePath, 'utf8')
-  const template = handlebars.compile(templateString);
-
-  const renderedPage = template(indexData);
-  fs.writeFileSync(indexHtmlOutPath, renderedPage);
+  renderTemplate(indexData, templatePath, indexHtmlOutPath);
 };
 
 renderPage('about');
