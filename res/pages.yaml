@@ -1,7 +1,0 @@
-pages:
-  - name: about
-    content: about.yaml
-  - name: posts
-    content: posts.yaml
-  - name: projects
-    content: projects.yaml

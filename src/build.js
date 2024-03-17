@@ -1,33 +1,42 @@
 const fs = require('fs');
-const yaml = require('yaml');
-const hb = require('handlebars')
+const handlebars = require('handlebars')
+const showdown = require('showdown')
 
 const templatesPath = '../res/templates';
-const pagesDataPath = '../res/data';
+const pagesPath = '../res/pages';
 const outputPath = '../public';
 
-const renderPage = (templatePath, dataPath, outputPath) => {
+const pages = [];
+const indexData = {
+  'pages': pages,
+  'currentYear': new Date().getFullYear()
+};
+
+const renderPage = (pageName) => {
+  const pageMarkdownPath = `${pagesPath}/${pageName}.md`;
+  const pageHtmlOutPath = `${outputPath}/${pageName}.html`
+
+  const pageString = fs.readFileSync(pageMarkdownPath, 'utf8');
+  const converter = new showdown.Converter();
+  const pageHtml = converter.makeHtml(pageString);
+
+  fs.writeFileSync(pageHtmlOutPath, pageHtml);
+  pages.push(pageName);
+};
+
+const renderIndex = () => {
+  const templatePath = `${templatesPath}/index.html.hbs`;
+  const indexHtmlOutPath = `${outputPath}/index.html`
+
   const templateString = fs.readFileSync(templatePath, 'utf8')
-  const template = hb.compile(templateString);
+  const template = handlebars.compile(templateString);
 
-  const dataString = fs.readFileSync(dataPath, 'utf8');
-  const data = yaml.parse(dataString);
+  const renderedPage = template(indexData);
+  fs.writeFileSync(indexHtmlOutPath, renderedPage);
+};
 
-  const renderedPage = template(data);
-
-  fs.writeFileSync(outputPath, renderedPage, 'utf8');
-
-  return data;
-}
-
-const pagesData = renderPage(
-  `${templatesPath}/index.html.hbs`,
-  '../res/pages.yaml',
-  `${outputPath}/index.html`
-);
-
-pagesData['pages'].forEach(page => renderPage(
-  `${templatesPath}/${page.name}.html.hbs`,
-  `${pagesDataPath}/${page.content}`,
-  `${outputPath}//${page.name}.html`
-));
+renderPage('about');
+renderPage('posts');
+renderPage('projects');
+renderPage('resume');
+renderIndex();
