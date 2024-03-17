@@ -2,9 +2,9 @@ const fs = require('fs');
 const handlebars = require('handlebars')
 const showdown = require('showdown')
 
-const templatesPath = '../res/templates';
-const pagesPath = '../res/pages';
-const outputPath = '../public';
+const templatesPath = 'res/templates';
+const pagesPath = 'res/pages';
+const outputPath = 'public';
 
 const pages = [];
 const indexData = {

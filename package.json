@@ -2,11 +2,14 @@
   "name": "website",
   "version": "0.1.0",
   "scripts": {
+    "start": "concurrently 'http-server -a localhost -p 1234' 'open http://localhost:1234'",
     "build": "node src/build.js"
   },
   "author": "adam schlesinger",
-  "dependencies": {
+  "devDependencies": {
+    "concurrently": "^8.2.2",
     "handlebars": "^4.7.8",
+    "http-server": "^14.1.1",
     "showdown": "^2.1.0"
   }
 }
