@@ -9,6 +9,7 @@ artists.
 
 locker is a project designed to replicate a lot of what actually does work for artists from other version control
 solutions. locker use the locking feature of git lfs to create workspaces that artists can pull binary files into.
+honestly the fact that this still doesn't really exist annoys me.
 
 - rust
 - git

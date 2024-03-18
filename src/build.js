@@ -37,6 +37,8 @@ const renderPage = (pageName) => {
 
   const pageString = fs.readFileSync(markdownPath, 'utf8');
   const converter = new showdown.Converter();
+  converter.setOption('tables', true)
+
   const pageHtml = converter.makeHtml(pageString);
 
   const pageContext = { name: pageName, html: pageHtml }
