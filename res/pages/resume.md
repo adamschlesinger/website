@@ -1,6 +1,6 @@
 i have a personal mission statement i've put together over my time in game development which is **provide the tools
 people need to succeed**. "tools" can be any of literal software tools, career guidance, knowledge, process, etc. it is
-my greatest joy to ensure everyone I work with is armed with everything they need to accomplish their goals.
+my greatest joy to ensure everyone i work with is armed with everything they need to accomplish their goals.
 
 # experience
 
@@ -12,13 +12,13 @@ of prior projects proves ability to take action. it's fine to fail as long as yo
 
 ### [2k]
 
-- Designed and organized cross-org development of a game engine-agnostic, universal
-  analytics and CRM stack built for zero integration time and behavioral consistency.
-- Regularly evaluated, onboarded, and worked with contractor teams to accelerate
+- designed and organized cross-org development of a game engine-agnostic, universal
+  analytics and crm stack built for zero integration time and behavioral consistency.
+- regularly evaluated, onboarded, and worked with contractor teams to accelerate
   development for high priority requirements.
-- Made discovery a primary pillar to ensure that product, marketing, and game development
+- made discovery a primary pillar to ensure that product, marketing, and game development
   teams were fully aware of the range of capabilities made available to them.
-- Regularly communicated upwards to share and work together on the core vision for
+- regularly communicated upwards to share and work together on the core vision for
   universal mobile technology.
 
 ## staff software engineer
@@ -64,7 +64,7 @@ quickly i can hit the ground running. regardless of each items' position i typic
 
 |                 |             |                   |                    |
 |:----------------|:------------|:------------------|--------------------|
-| c#              | objective-c | python            | java               | 
+| c#              | objective-c | python            | java               |
 | unity           | bash        | regex             | ruby               |
 | c++             | kotlin      | rust              | sql                |
 | terraform       | aws         | swift             | javascript         |

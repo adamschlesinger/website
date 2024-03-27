@@ -1,4 +1,4 @@
-in no particular order the following is my scrap heap of abandoned work that I have started and more than likely will
+in no particular order the following is my scrap heap of abandoned work that i have started and more than likely will
 never finish. almost all of these will die alone in a private repo; never to see the light of open source. if you want
 to steal one of these at least let me know? i'll even give you my source and design docs if you're cool about it.
 
@@ -47,7 +47,7 @@ attack or giving another player a buff to dramatically increase the effectivenes
 i wanted to do everything in this project but it started with playing to my strengths: a small mobile unity project with
 multiplayer backed by firebase.
 
-where the feature creep really started rolling in was one night while playing jackbox. i realized "hey I could make this
+where the feature creep really started rolling in was one night while playing jackbox. i realized "hey i could make this
 a local play version of this". and so the demo began: i actually have a working demo where i can flick a card from my
 phone to a tv with a chromecast! don't even need a console or pc!
 
