@@ -12,12 +12,6 @@ const indexData = {
   currentYear: new Date().getFullYear()
 };
 
-/**
- *
- * @param context
- * @param templatePath
- * @param renderingOutputPath
- */
 const renderTemplate = (context, templatePath, renderingOutputPath) => {
   const templateString = fs.readFileSync(templatePath, 'utf8')
   const template = handlebars.compile(templateString);
@@ -26,10 +20,6 @@ const renderTemplate = (context, templatePath, renderingOutputPath) => {
   fs.writeFileSync(renderingOutputPath, renderedPage);
 };
 
-/**
- *
- * @param pageName
- */
 const renderPage = (pageName) => {
   const markdownPath = `${pagesPath}/${pageName}.md`;
   const htmlOutPath = `${outputPath}/${pageName}.html`
@@ -54,9 +44,6 @@ const renderPage = (pageName) => {
   pages.push(pageName);
 };
 
-/**
- *
- */
 const renderIndex = () => {
   const templatePath = `${templatesPath}/index.html.hbs`;
   const indexHtmlOutPath = `${outputPath}/index.html`
