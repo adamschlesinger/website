@@ -1,4 +1,4 @@
-name: Build & Serve
+name: Build
 
 on:
   push:
@@ -21,6 +21,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    
+    - run: npm init
     
     - run: npm run build --if-present
 
