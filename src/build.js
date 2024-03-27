@@ -39,6 +39,13 @@ const renderPage = (pageName) => {
   const converter = new showdown.Converter();
   converter.setOption('tables', true)
 
+  // just make all headers 1 smaller
+  converter.addExtension({
+    type: 'output',
+    regex: /(?<=[<\/)|]h)[1-9](?=.*?>)/g,
+    replace: text => parseInt(text) + 1
+  });
+
   const pageHtml = converter.makeHtml(pageString);
 
   const pageContext = { name: pageName, html: pageHtml }
