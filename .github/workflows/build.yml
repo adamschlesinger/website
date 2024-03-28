@@ -18,11 +18,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
     strategy:
       matrix:
         node-version: [21.7.x]
-        
     steps:
     - uses: actions/checkout@v4.1.2
     - uses: actions/setup-node@v4.0.2
@@ -35,20 +33,18 @@ jobs:
       with: 
         add: public
         message: Built latest
-  
   deploy:
     runs-on: ubuntu-latest
-    
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.1.2
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: 'public/*'
+          path: 'public'
       - id: deployment
         uses: actions/deploy-pages@v4
     
