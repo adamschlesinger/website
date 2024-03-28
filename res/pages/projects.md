@@ -1,6 +1,7 @@
-in no particular order the following is my scrap heap of abandoned work that i have started and more than likely will
-never finish. almost all of these will die alone in a private repo; never to see the light of open source. if you want
-to steal one of these at least let me know? i'll even give you my source and design docs if you're cool about it.
+in no particular order the following is my scrap heap of not entirely abandoned work that i have started and more than
+likely will never finish. almost all of these will die alone in a private repo; never to see the light of open source.
+if you want to steal one of these at least let me know? i'll even give you my source and design docs if you're cool
+about it.
 
 # locker
 
@@ -11,28 +12,20 @@ locker is a project designed to replicate a lot of what actually does work for a
 solutions. locker use the locking feature of git lfs to create workspaces that artists can pull binary files into.
 honestly the fact that this still doesn't really exist annoys me.
 
-- rust
-- git
-- git lfs
-- a working knowledge of perforce
-- spite
+`rust, git, git lfs, a working knowledge of perforce, spite`
 
-# this website
+# [this website]
 
 i wanted a website, so here it is
 
-- html
-- css
-- minimal js because i hate it
-- yaml
-- templating
+`html, css, minimal js because i hate it, markdown, handlebars (templating)`
 
 # coffee
 
 i drink a ton of coffee, espresso especially, and i wanted a way to correlate coffees with the quality output of
 different preparation methods.
 
-neo4js, react
+`neo4js, react`
 
 # cards
 
@@ -55,7 +48,7 @@ man do i want to get back to this game one day but holy fuck is stitching all of
 probably say a shit ton more about this project so i may periodically update this. and if anyone wants to give me a few
 million to build a team to make it right my contact page is over there -->
 
-unity, firebase, chromecast, ios, android, js (ugh)
+`unity, firebase, chromecast, ios, android, js`
 
 # cdk
 
@@ -67,11 +60,14 @@ the crux of the cdk is that it's "zero lines of code" to get up and running. i h
 which had initial integration times countable in hours. during the year i spent at onesignal i brought down the
 integration time on the unity sdk to a few minutes. with the cdk we're talking like... maybe a minute?
 
-rust, swift, kotlin, c++, open telemetry, open api, a fuckton of code gen tooling, hatred of bad documentation
+`rust, swift, kotlin, c++, open telemetry, open api, a fuckton of code gen tooling, hatred of bad documentation`
 
 # comment
 
 a chrome plugin that lets you leave comments on any webpage. originally this came about because i wanted a way to leave
 nasty (but true) comments about previous landlords on their zillow listings.
 
-only ever existed as a google doc
+`only ever existed as a google doc`
+
+
+[this website]: https://github.com/adamschlesinger/website
