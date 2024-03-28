@@ -33,68 +33,68 @@ of prior projects proves ability to take action. it's fine to fail as long as yo
 
 ### [onesignal]
 
-- Worked with peers to architect and build out major underlying system refactors in order to streamline future
+- worked with peers to architect and build out major underlying system refactors in order to streamline future
   development efforts and eliminate redundant work.
-- Built and released a showcase game in Unity to serve as a source for handling quality assurance, dogfooding, and to
+- built and released a showcase game in unity to serve as a source for handling quality assurance, dogfooding, and to
   provide a sample best-practices application to clients.
-- Setup CICD pipelines for various SDKs with junior engineers as mentoring exercises.
-- Established and ran a developer “book” club with projects designed to build developer empathy and a greater knowledge
+- setup cicd pipelines for various sdks with junior engineers as mentoring exercises.
+- established and ran a developer “book” club with projects designed to build developer empathy and a greater knowledge
   base of similar products.
 
 ## engineering manager
 
 ### [tilting point]
 
-- Coordinated international development efforts across internal departments and external game development partners to
+- coordinated international development efforts across internal departments and external game development partners to
   determine engineering priorities for all parties.
-- Managed two independent teams: Asset automation and CMS for game and ad content and the other a partner-facing stack
-  of Unity SDK and accompanying backend microservices covering ad mediation, attribution, analytics, and live
+- managed two independent teams: asset automation and cms for game and ad content and the other a partner-facing stack
+  of unity sdk and accompanying backend microservices covering ad mediation, attribution, analytics, and live
   operations.
-- Served as architect for all engineering efforts by helping team members to scope work, determine ideal API design,
+- served as architect for all engineering efforts by helping team members to scope work, determine ideal api design,
   documentation, design patterns, unit test coverage, and operating “shoulder studies” for pipeline tooling.
-- Continued building code and working to use the tools I was creating as mentoring opportunities for my junior
+- continued building code and working to use the tools i was creating as mentoring opportunities for my junior
   engineers.
 
 ## lead fullstack engineer
 
 ### [tilting point]
 
-- Led the design and implementation of a major refactor to the entire internal analytics pipeline from SDK to data
-  warehousing. Ensured the new systems would “stick” by actively coordinating with the data analysis team to ensure a
+- led the design and implementation of a major refactor to the entire internal analytics pipeline from sdk to data
+  warehousing. ensured the new systems would “stick” by actively coordinating with the data analysis team to ensure a
   smooth hand-off.
-- Built several full-stack microservices for fully managing in-app purchases across titles and major distribution
+- built several full-stack microservices for fully managing in-app purchases across titles and major distribution
   platforms.
 
 ## mobile engineer
 
 ### [tilting point]
 
-- Took over as primary engineer of an in-house SDK written for Unity games. The SDK was
+- took over as primary engineer of an in-house sdk written for unity games. the sdk was
   purpose-built to make the experience of operating a vast portfolio of live games more
   consistent across titles as well as easing implementation of key live operation features.
-- Handled developer outreach, relationships, and support for new and existing partners.
+- handled developer outreach, relationships, and support for new and existing partners.
 
 ## programmer
 
 ### [freshplanet]
 
-- Created and maintained open-source code libraries using AS3, Obj-C, and Java for a
+- created and maintained open-source code libraries using as3, obj-c, and java for a
   portfolio of mobile games covering analytics, ad mediation, async helpers, and others.
-- Built out a toolset to automate the scraping of published ad information and automatic
+- built out a toolset to automate the scraping of published ad information and automatic
   reporting of non-functional and/or unapproved content.
-- Responsible for optimizing all native C++ code for cross-platform plugins.
-- Designed and implemented a new cooperative gameplay system.
+- responsible for optimizing all native c++ code for cross-platform plugins.
+- designed and implemented a new cooperative gameplay system.
 
 ## programmer
 
 ### [dreamkind]
 
-- Worked with artists to design and fully build in-house games from scratch with both Flash
-  (AS3) and Cocos2d-X.
-- Used several well-known brands in early childhood education to develop games. Actively
+- worked with artists to design and fully build in-house games from scratch with both flash
+  (as3) and cocos2d-x.
+- used several well-known brands in early childhood education to develop games. actively
   participated in design sessions with the license holders.
-- Co-architected a Python server on Google Cloud for sharing content from user to user.
-- Defined workflow and client project architecture among a small team of artists and devs.
+- co-architected a python server on google cloud for sharing content from user to user.
+- defined workflow and client project architecture among a small team of artists and devs.
 
 # knowledge
 
