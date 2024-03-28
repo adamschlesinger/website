@@ -50,6 +50,15 @@ million to build a team to make it right my contact page is over there -->
 
 `unity, firebase, chromecast, ios, android, js`
 
+# bridger
+
+for a second there i reeeeaaallly got into lexers, tokenizers, and parsers. for my own needs i started writing 
+deserialization for public constructs in various languages to then codegen wrappers to other languages. this one is 
+basically up and running for my exact needs and it's pretty cool but i'd want to spend way too much time cleaning it up
+before it saw the light of day.
+
+`c#, scriban`
+
 # cdk
 
 somewhat affectionately named the capitalism development kit, this is a suite of fullstack tools for mobile, console,
