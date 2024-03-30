@@ -98,8 +98,9 @@ of prior projects proves ability to take action. it's fine to fail as long as yo
 
 # knowledge
 
-i'm a generalist. i touch **a ton** of tech with extreme frequency, but these are **roughly** ordered by level of how
-quickly i can hit the ground running. regardless of each items' position i typically spin up on anything new very fast.
+i'm a generalist. i touch **a ton** of tech with extreme frequency, but these will eventually be **roughly** ordered by
+level of how quickly i can hit the ground running. regardless of each items' position i typically spin up on anything
+new very fast.
 
 |                 |             |                   |                    |
 |:----------------|:------------|:------------------|--------------------|
