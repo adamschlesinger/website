@@ -31,7 +31,7 @@ different preparation methods.
 
 feature creep: the game
 
-this project started from a realization that the initiative system in d&d could be better if it was reversed. let me
+this project started from a realization that i really hated the initiative system in d&d... until i reversed it. let me
 explain: instead of the highest roll going first, they go last, and actions don't resolve until the turn has ended. this
 system allows for a few things d&d doesn't really have: counters and combos. by having actions added to a pile to
 happen "later" a player can choose to respond that turn. this can create huge moments of a player clashing to block an
