@@ -3,7 +3,7 @@ likely will never finish. almost all of these will die alone in a private repo; 
 if you want to steal one of these at least let me know? i'll even give you my source and design docs if you're cool
 about it.
 
-# locker
+# [locker]
 
 there has been a constant issue with every game project i've worked on: git is phenomenal for programmers but sucks for
 artists.
@@ -80,3 +80,4 @@ nasty (but true) comments about previous landlords on their zillow listings.
 
 
 [this website]: https://github.com/adamschlesinger/website
+[locker]: https://github.com/adamschlesinger/locker-cli
